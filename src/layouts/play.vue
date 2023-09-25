@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {useDataStore} from "@/stores/data";
 import {useRouter} from "vue-router";
+import { useDisplay } from 'vuetify';
 import api from "@/utils/api";
 const router = useRouter();
 const {t, locale} = useI18n();
@@ -19,12 +20,17 @@ function nextYear() {
     }
   })
 }
+const { name } = useDisplay();
+const isMobile = computed(() => name.value === 'xs');
 </script>
 <template>
   <v-app>
     <v-app-bar app>
       <div class="px-2 flex items-center">
-        <Logo :width="200" :height="40"/>
+        <!--     移动端的时候只显示小logo Icon     -->
+        <LogoIcon v-if="isMobile" :width="60" :height="60"/>
+        <!--     非移动端显示大图标     -->
+        <Logo v-else :width="200" :height="40"/>
       </div>
       <v-spacer></v-spacer>
       <h1>{{dataStore.currentYear}}</h1>

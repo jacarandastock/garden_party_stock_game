@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     LatexRender: typeof import('./components/latex-render.vue')['default']
     LocaleToggler: typeof import('./components/blocks/LocaleToggler.vue')['default']
     Logo: typeof import('./components/blocks/Logo.vue')['default']
+    LogoIcon: typeof import('./components/blocks/LogoIcon.vue')['default']
     MultipleOralDosingDialog: typeof import('./pages/formulas/components/multiple-oral-dosing/multiple-oral-dosing-dialog.vue')['default']
     MultipleOralDosingGraph: typeof import('./pages/formulas/components/multiple-oral-dosing/multiple-oral-dosing-graph.vue')['default']
     NonLinearPharmacokineticsDialog: typeof import('./pages/formulas/components/nonLinearPharmacokinetics/nonLinearPharmacokinetics-dialog.vue')['default']
