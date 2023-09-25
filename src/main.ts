@@ -24,14 +24,14 @@ export const createApp = ViteSSG(App, { routes, history: history, base: import.m
     app.use(vuetify)
     // app.use(createHead())
     app.use(i18n)
-    router.beforeEach(async (to: any, from: any, next: any) => {
-        if (to.meta.requiresAuth && !await isTokenValid(getToken(), to.meta.isAdmin)) {
-            next('/');
-        } else {
-            next();
-        }
-    });
     if (isClient) {
+        router.beforeEach(async (to: any, from: any, next: any) => {
+            if (to.meta.requiresAuth && !await isTokenValid(getToken(), to.meta.isAdmin)) {
+                next('/');
+            } else {
+                next();
+            }
+        });
         import('vue3-apexcharts').then(({ default: VueApexCharts }) => {
             app.use(VueApexCharts)
         })
