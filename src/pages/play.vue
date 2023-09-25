@@ -78,7 +78,7 @@ function getBuySliderMaxValue(stockPrice) {
 const ws = ref(null);
 function connectUserWebSocket() {
   const token = getToken();
-  ws.value = new WebSocket(`ws://${apiURL}/api/user/ws?token=${token}`);
+  ws.value = new WebSocket(`wss://${apiURL}/api/user/ws?token=${token}`);
 
   ws.value.onopen = () => {
     // 请求最新的数据

@@ -10,7 +10,7 @@ let requestInterval = null;
 const ws = ref(null);
 function connectAdminWebSocket() {
   const token = getToken();
-  ws.value = new WebSocket(`ws://${apiURL}/api/user/rank/ws?token=${token}`);
+  ws.value = new WebSocket(`wss://${apiURL}/api/user/rank/ws?token=${token}`);
 
   ws.value.onopen = () => {
     // 请求最新的数据
