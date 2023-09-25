@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { getToken } from './auth';
 import {useDataStore} from "@/stores/data";
-export const apiURL = 'https://jacarandastock.com:8000';
+export const apiURL = 'jacarandastock.com:8000';
 
 export const api = axios.create({
-    baseURL: `http://${apiURL}`
+    baseURL: `https://${apiURL}`
 });
 
 api.interceptors.request.use((config) => {
