@@ -301,4 +301,5 @@ function fix2float(num) {
 <route lang="yaml">
 meta:
   layout: play
+  requiresAuth: true
 </route>
