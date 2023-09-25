@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getToken } from './auth';
 import {useDataStore} from "@/stores/data";
-export const apiURL = 'ec2-43-198-87-142.ap-east-1.compute.amazonaws.com:8000'
+export const apiURL = 'jacarandastock.com:8000';
 
 export const api = axios.create({
     baseURL: `http://${apiURL}`
