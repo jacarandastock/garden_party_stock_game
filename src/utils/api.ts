@@ -19,7 +19,7 @@ export const RECONNECT_INTERVAL = 5000;  // 重连间隔，单位：毫秒
 const ws: any = ref(null);
 export function connectMarketWebSocket() {
     const dataStore = useDataStore();
-    ws.value = new WebSocket(`ws://${apiURL}/api/stock/ws`);
+    ws.value = new WebSocket(`wss://${apiURL}/api/stock/ws`);
 
     ws.value.onopen = () => {
         // 请求最新的数据
