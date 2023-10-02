@@ -21,7 +21,7 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "\u0000/home/runner/work/garden_party_stock_game/garden_party_stock_game/node_modules/apexcharts/dist/apexcharts.common.js?commonjs-module": [
-    "/garden_party_stock_game/assets/vue3-apexcharts.common-e2d05d46.js"
+    "/garden_party_stock_game/assets/vue3-apexcharts.common-24794c26.js"
   ],
   "\u0000/home/runner/work/garden_party_stock_game/garden_party_stock_game/node_modules/vue/dist/vue.cjs.js?commonjs-exports": [
     "/garden_party_stock_game/assets/Cairo-a25088d8.ttf",
@@ -45,7 +45,7 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "\u0000/home/runner/work/garden_party_stock_game/garden_party_stock_game/node_modules/vue3-apexcharts/dist/vue3-apexcharts.common.js?commonjs-module": [
-    "/garden_party_stock_game/assets/vue3-apexcharts.common-e2d05d46.js"
+    "/garden_party_stock_game/assets/vue3-apexcharts.common-24794c26.js"
   ],
   "\u0000commonjsHelpers.js": [
     "/garden_party_stock_game/assets/Cairo-a25088d8.ttf",
@@ -272,7 +272,7 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "node_modules/apexcharts/dist/apexcharts.common.js": [
-    "/garden_party_stock_game/assets/vue3-apexcharts.common-e2d05d46.js"
+    "/garden_party_stock_game/assets/vue3-apexcharts.common-24794c26.js"
   ],
   "node_modules/axios/lib/adapters/adapters.js": [
     "/garden_party_stock_game/assets/Cairo-a25088d8.ttf",
@@ -646,7 +646,7 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "node_modules/vue3-apexcharts/dist/vue3-apexcharts.common.js": [
-    "/garden_party_stock_game/assets/vue3-apexcharts.common-e2d05d46.js"
+    "/garden_party_stock_game/assets/vue3-apexcharts.common-24794c26.js"
   ],
   "node_modules/vuetify/lib/blueprints/md3.mjs": [
     "/garden_party_stock_game/assets/Cairo-a25088d8.ttf",
@@ -2546,71 +2546,71 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/VDataTable.css": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/VDataTable.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/VDataTableColumn.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/VDataTableFooter.css": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/VDataTableFooter.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/VDataTableGroupHeaderRow.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/VDataTableHeaders.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/VDataTableRow.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/VDataTableRows.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/composables/expand.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/composables/group.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/composables/headers.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/composables/items.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/composables/options.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/composables/paginate.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/composables/select.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/labs/VDataTable/composables/sort.mjs": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "node_modules/vuetify/lib/locale/adapters/vuetify.mjs": [
@@ -2817,31 +2817,31 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "src/components/blocks/LocaleToggler.vue": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/components/blocks/LocaleToggler.vue?vue&type=script&setup=true&lang.ts": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/components/blocks/Logo.vue": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/components/blocks/Logo.vue?vue&type=script&setup=true&lang.ts": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/components/blocks/LogoIcon.vue": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/components/blocks/LogoIcon.vue?vue&type=script&setup=true&lang.ts": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/components/blocks/ThemeToggler.vue": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/components/blocks/ThemeToggler.vue?vue&type=script&setup=true&lang.ts": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/components/stock-chart.vue": [
-    "/garden_party_stock_game/assets/route-block-e576d1d2.js"
+    "/garden_party_stock_game/assets/route-block-dea48b3d.js"
   ],
   "src/composables/useAppI18n.ts": [
     "/garden_party_stock_game/assets/Cairo-a25088d8.ttf",
@@ -2879,10 +2879,10 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "src/layouts/play.vue": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/layouts/play.vue?vue&type=script&setup=true&lang.ts": [
-    "/garden_party_stock_game/assets/play-c44ef495.js"
+    "/garden_party_stock_game/assets/play-a88a0a51.js"
   ],
   "src/locales/cn.yml": [
     "/garden_party_stock_game/assets/Cairo-a25088d8.ttf",
@@ -2906,15 +2906,15 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "src/pages/[...all].vue": [
-    "/garden_party_stock_game/assets/_...all_-48d6fd79.js",
+    "/garden_party_stock_game/assets/_...all_-19c01708.js",
     "/garden_party_stock_game/assets/_...all_-83ede320.css"
   ],
   "src/pages/[...all].vue?vue&type=style&index=0&scoped=e9f0bf08&lang.css": [
-    "/garden_party_stock_game/assets/_...all_-48d6fd79.js",
+    "/garden_party_stock_game/assets/_...all_-19c01708.js",
     "/garden_party_stock_game/assets/_...all_-83ede320.css"
   ],
   "src/pages/admin.vue": [
-    "/garden_party_stock_game/assets/admin-10dab8ce.js",
+    "/garden_party_stock_game/assets/admin-61f8d87b.js",
     "/garden_party_stock_game/assets/admin-a6310e9f.css"
   ],
   "src/pages/index.vue": [
@@ -2932,7 +2932,7 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "src/pages/play.vue": [
-    "/garden_party_stock_game/assets/play-d167e12d.js"
+    "/garden_party_stock_game/assets/play-9dcbe721.js"
   ],
   "src/plugins/i18n.ts": [
     "/garden_party_stock_game/assets/Cairo-a25088d8.ttf",
@@ -2977,6 +2977,6 @@
     "/garden_party_stock_game/assets/materialdesignicons-webfont-a58ecb54.ttf"
   ],
   "virtual:/vue-router/auto/route-block": [
-    "/garden_party_stock_game/assets/route-block-e576d1d2.js"
+    "/garden_party_stock_game/assets/route-block-dea48b3d.js"
   ]
 }
