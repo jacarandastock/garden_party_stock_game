@@ -12,23 +12,25 @@ const dataStore = useDataStore();
 // dialog
 const confirmDialog = ref(false);
 const confirmMessage = ref({});
-const exchangeNumber = ref(0);
+const exchangeNumber = ref(1);
 const exchangePrice = ref(0);
 const exchangeEndpoint = ref("");
 const stockName = ref("");
-const exchangeMax = ref(0);
+const exchangeMax = ref(1);
 const onExchangeButtonClick = (type, name, stockPrice) => {
   if (type === 'BUY') {
     confirmMessage.value = {
       title: `请输入您要购买股票 ${name} 的数量`,
-      confirm: "买入"
+      confirm: "买入",
+      type: "BUY"
     };
     exchangeEndpoint.value = "/api/stock/buy";
     exchangeMax.value = getBuySliderMaxValue(stockPrice);
   } else {
     confirmMessage.value = {
       title: `请输入您要卖出股票 ${name} 的数量`,
-      confirm: "卖出"
+      confirm: "卖出",
+      type: "SELL"
     };
     exchangeEndpoint.value = "/api/stock/sell";
     exchangeMax.value = dataStore.userPosition.position[name].quantity;
@@ -40,7 +42,7 @@ const onExchangeButtonClick = (type, name, stockPrice) => {
 
 const onExchangeConfirmDialogClose = () => {
   confirmDialog.value = false;
-  exchangeNumber.value = 0;
+  exchangeNumber.value = 1;
   stockName.value = "";
   exchangePrice.value = 0;
 }
@@ -241,7 +243,17 @@ function fix2float(num) {
         </v-card-title>
         <v-divider></v-divider>
         <v-card-subtitle>
-          您当前的余额为 {{ fix2float(dataStore.userPosition.balance)}}
+          <div v-if="confirmMessage.type ==='BUY'">
+            <div>您当前的余额为 {{ fix2float(dataStore.userPosition.balance)}}</div>
+            <div>您最多可以购买 {{ exchangeMax }} 股</div>
+            <div>当前需要花费 {{ fix2float(exchangeNumber * exchangePrice) }} 元</div>
+          </div>
+          <div v-if="confirmMessage.type ==='SELL'">
+            <div>您当前的余额为 {{ fix2float(dataStore.userPosition.balance)}}</div>
+            <div>您当前持有 {{ exchangeMax }} 股</div>
+            <div>当前卖出当前数量的股票可获得 {{ fix2float(exchangeNumber * exchangePrice) }} 元</div>
+          </div>
+
         </v-card-subtitle>
         <v-card-text>
           <v-sheet>
@@ -256,17 +268,13 @@ function fix2float(num) {
             >
               <!-- Box for user to enter number -->
               <template v-slot:append>
-                <v-text-field
-                    v-model='exchangeNumber'
-                    hide-details
-                    single-line
-                    min='1'
-                    :max='exchangeMax'
-                    step='1'
-                    density='compact'
-                    type='number'
-                    style='width: 100px'
-                ></v-text-field>
+                <v-card
+                    elevation="0"
+                    class="text-center bg-transparent"
+                    style='width: 100px;'
+                >
+                  {{exchangeNumber}}
+                </v-card>
               </template>
             </v-slider>
           </v-sheet>
