@@ -1,0 +1,30 @@
+pages:
+  machine:
+    serialNumber:
+      machineInfo: Machine Info
+      modelInfo: Model Info
+      manufacturer: Manufacturer
+      ProductId: Product Id
+      maintenancePeriod: Maintenance Period
+      quantity: Quantity
+      type: Type
+      fault: Fault
+      serialNumber: Serial Number
+      state: State
+      trainOrNot: Train Or Not
+      warrantyDate: Warranty Date
+      inWarranty: In Warranty
+      outWarranty: Out Warranty
+      warrantyState: Warranty State
+      belongClinic: Belong Clinic
+      clinicName: Name
+      clinicAddress: Address
+      clinicPhone: Contact Phone
+      maintenanceState: Maintenance State
+      lastMaintenanceDate: Last Maintenance Date
+      nextMaintenanceDate: Next Maintenance Date
+      maintainerINFO: Maintainer Info
+      maintainerName: Maintainer Name
+      maintainerPhone: Phone
+      maintainerLevel: Level
+      repair: Repair

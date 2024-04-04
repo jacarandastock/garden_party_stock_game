@@ -1,0 +1,30 @@
+pages:
+  machine:
+    serialNumber:
+      machineInfo: 机器信息
+      modelInfo: 型号信息
+      manufacturer: 制造商
+      ProductId: 产品编号
+      maintenancePeriod: 维护周期
+      quantity: 数量
+      type: 类型
+      fault: 故障
+      serialNumber: 序列号
+      state: 状态
+      trainOrNot: 是否接受培训
+      warrantyDate: 保修日期
+      inWarranty: 保修中
+      outWarranty: 保修已过期
+      warrantyState: 保修状态
+      belongClinic: 所属医院
+      clinicName: 名称
+      clinicAddress: 地址
+      clinicPhone: 联系电话
+      maintenanceState: 维护状态
+      lastMaintenanceDate: 上次维护日期
+      nextMaintenanceDate: 下次维护日期
+      maintainerINFO: 负责人信息
+      maintainerName: 工程师姓名
+      maintainerPhone: 电话
+      maintainerLevel: 级别
+      repair: 报修
