@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
 useHead({
-    title: 'Game',
-    meta: [{ name: 'description', content: 'Game' }],
+    title: '蓝楹会',
+    meta: [{ name: 'description', content: '蓝楹会' }],
 })
 
 onInitApp();
