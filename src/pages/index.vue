@@ -553,5 +553,5 @@ async function postSell() {
 
 <route lang="yaml">
 meta:
-requiresAuth: false
+  requiresAuth: false
 </route>

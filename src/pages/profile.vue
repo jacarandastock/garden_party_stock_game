@@ -177,5 +177,5 @@ async function getProfile() {
 
 <route lang="yaml">
 meta:
-requiresAuth: false
+  requiresAuth: false
 </route>
