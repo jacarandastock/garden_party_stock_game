@@ -283,8 +283,54 @@ const rules = [
         </v-btn>
       </template>
     </v-snackbar>
-    <v-container class="fill-height d-flex align-center justify-center w-100 text-center">
+    <v-container class="fill-height d-flex align-center justify-center w-100 text-center flex-column">
       <v-icon size="150">mdi-bank</v-icon>
+      <v-dialog max-width="450">
+        <template v-slot:activator="{ props: activatorProps }">
+          <v-btn
+              v-bind="activatorProps"
+              color="surface-variant"
+              prepend-icon="mdi-information"
+              text="重要信息"
+              variant="outlined"
+          ></v-btn>
+        </template>
+
+        <template v-slot:default="{ isActive }">
+          <v-card title="银行信息">
+            <v-card-text>
+              <v-row>
+                <v-col cols="12">
+                  借款利率: <v-chip color="error">2.0%</v-chip>
+                </v-col>
+                <v-col cols="12">
+                  借款利息计算公式:
+                </v-col>
+                <v-col cols="12">
+                  存款利率: <v-chip color="success">1.5%</v-chip>
+                </v-col>
+                <v-col cols="12">
+                  存款利息计算公式:
+                </v-col>
+                <v-col cols="12">
+                  最大借款额度: 当年开盘时所持总资产的 <v-chip>20%</v-chip>
+                </v-col>
+              </v-row>
+            </v-card-text>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+
+              <v-btn
+                  text="我已知晓"
+                  block=""
+                  @click="isActive.value = false"
+                  variant="elevated"
+              ></v-btn>
+            </v-card-actions>
+          </v-card>
+        </template>
+      </v-dialog>
       <v-divider class="my-2"></v-divider>
       <v-row>
         <v-col cols="6" class="d-flex justify-center align-center">
@@ -335,6 +381,9 @@ const rules = [
                   <v-row>
                     <v-col cols="12" md="6">
                       现金余额: ${{ displayInfo.money }}
+                    </v-col>
+                    <v-col cols="12" md="6">
+                      固定利率: <v-chip color="success">1.5%</v-chip>
                     </v-col>
                     <!-- 给一个划框的输入框-->
                     <v-col cols="12">
@@ -536,8 +585,20 @@ const rules = [
                 <v-divider></v-divider>
                 <v-card-text>
                   <v-row>
+                    <v-col cols="12" >
+                      <v-alert
+                          color="info"
+                          density="compact"
+                          text="借款存在期间，您将无法再次借款"
+                          icon="mdi-information"
+                          type="success"
+                      ></v-alert>
+                    </v-col>
                     <v-col cols="12" md="6">
                       您的最大借款额度: ${{ displayInfo.money }}
+                    </v-col>
+                    <v-col cols="12" md="6">
+                      借款利息: <v-chip color="error">2.0%</v-chip>
                     </v-col>
                     <!-- 给一个划框的输入框-->
                     <v-col cols="12">
@@ -652,16 +713,16 @@ const rules = [
                 <v-card-text>
                   <v-row>
                     <v-col cols="12" md='4'>
-                      您借款的金额: ${{ displayInfo.money }}
+                      您借款的金额: ${{ displayInfo.money.toFixed(2) }}
                     </v-col>
                     <v-col cols="12" md="4">
-                      需付利息: ${{ displayInfo.interest }}
+                      需付利息: ${{ displayInfo.interest.toFixed(2) }}
                     </v-col>
                     <v-col cols="12" md="4">
                       已借款周期: {{ displayInfo.period }}
                     </v-col>
                     <v-col cols="12">
-                      总计: ${{ displayInfo.total }}
+                      总计: ${{ displayInfo.total.toFixed(2) }}
                     </v-col>
                   </v-row>
                 </v-card-text>

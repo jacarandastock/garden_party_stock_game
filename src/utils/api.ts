@@ -7,7 +7,6 @@ export const apiURL = 'quizgame.jacarandastock.com'
 export const protocol = 'https';
 
 // export const apiURL = '127.0.0.1:5000';
-//
 // // 协议
 // export const protocol = 'http';
 export const wsProtocol = protocol === 'http' ? 'ws' : 'wss';
