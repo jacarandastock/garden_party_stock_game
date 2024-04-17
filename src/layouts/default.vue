@@ -21,9 +21,9 @@ defineProps({
 <template>
   <v-app id="inspire">
     <VSonner position="top-right"/>
-    <v-app-bar flat>
+    <v-app-bar flat class="text-h6 font-weight-bold">
       <v-spacer></v-spacer>
-      {{dataStore.year}}
+      {{dataStore.year}} 年
       <v-spacer></v-spacer>
       <!--      <total-rank></total-rank>-->
       <theme-toggler></theme-toggler>

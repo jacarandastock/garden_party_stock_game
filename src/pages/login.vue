@@ -119,10 +119,10 @@ async function register() {
           <div class="d-flex justify-end">
             <v-btn class="mt-4" color="primary" @click="login">开始🎉</v-btn>
           </div>
-          <v-btn block variant="outlined" elevation="3" rounded="2" class="mt-4" color="primary"
-                 @click="register">
-            🔰 还没有创建账号? 点击我注册
-          </v-btn>
+<!--          <v-btn block variant="outlined" elevation="3" rounded="2" class="mt-4" color="primary"-->
+<!--                 @click="register">-->
+<!--            🔰 还没有创建账号? 点击我注册-->
+<!--          </v-btn>-->
         </v-card>
 
       </v-col>

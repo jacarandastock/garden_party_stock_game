@@ -304,13 +304,13 @@ const rules = [
                   借款利率: <v-chip color="error">2.0%</v-chip>
                 </v-col>
                 <v-col cols="12">
-                  借款利息计算公式:
+                  借款利息计算公式: (P * (1 + i)^n) - P)
                 </v-col>
                 <v-col cols="12">
                   存款利率: <v-chip color="success">1.5%</v-chip>
                 </v-col>
                 <v-col cols="12">
-                  存款利息计算公式:
+                  存款利息计算公式: (P * (1 + i)^n) - P)
                 </v-col>
                 <v-col cols="12">
                   最大借款额度: 当年开盘时所持总资产的 <v-chip>20%</v-chip>
@@ -380,7 +380,7 @@ const rules = [
                 <v-card-text>
                   <v-row>
                     <v-col cols="12" md="6">
-                      现金余额: ${{ displayInfo.money }}
+                      现金余额: ${{ displayInfo.money.toFixed(2) }}
                     </v-col>
                     <v-col cols="12" md="6">
                       固定利率: <v-chip color="success">1.5%</v-chip>
@@ -471,7 +471,7 @@ const rules = [
                 <v-card-text>
                   <v-row>
                     <v-col cols="12" md="6">
-                      银行余额: ${{ displayInfo.money }}
+                      银行余额: ${{ displayInfo.money.toFixed(2) }}
                     </v-col>
                     <!-- 给一个划框的输入框-->
                     <v-col cols="12">
@@ -595,7 +595,7 @@ const rules = [
                       ></v-alert>
                     </v-col>
                     <v-col cols="12" md="6">
-                      您的最大借款额度: ${{ displayInfo.money }}
+                      您的最大借款额度: ${{ displayInfo.money.toFixed(2) }}
                     </v-col>
                     <v-col cols="12" md="6">
                       借款利息: <v-chip color="error">2.0%</v-chip>

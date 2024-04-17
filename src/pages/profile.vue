@@ -10,7 +10,8 @@ import {useDisplay} from 'vuetify';
 import {provide, ref} from "vue";
 import {useRouter} from "vue-router";
 const router = useRouter()
-
+const { name } = useDisplay()
+const isMobile = computed(() => name.value === 'xs')
 
 const dataStore = useDataStore();
 
@@ -113,11 +114,19 @@ async function getOperationRecord() {
           ></v-alert>
         </v-card-text>
         <v-list>
+          <v-list-item v-if="isMobile && !profileData.loan">
+            <v-alert
+                density="compact"
+                text="借款额度为当年开盘时所持总资产的20%"
+                icon="mdi-scale-balance"
+                type="info"
+            ></v-alert>
+          </v-list-item>
           <v-list-item v-if="!profileData.loan">
             <template v-slot:prepend>
               <v-icon color="primary">mdi-currency-usd</v-icon>
             </template>
-            <v-list-item-title>您今年的借款额度 <v-chip>当年开盘时所持总资产的20%</v-chip></v-list-item-title>
+            <v-list-item-title>您今年的借款额度 <v-chip v-if="!isMobile">当年开盘时所持总资产的20%</v-chip></v-list-item-title>
             <v-list-item-subtitle>{{profileData.max_loan.toFixed(2)}}</v-list-item-subtitle>
           </v-list-item>
           <v-list-item v-else>

@@ -24,7 +24,7 @@ onMounted(async () => {
     <div class="text-h6 text-center" v-if="resultData">
       您的最终资产为:
     </div>
-    <div class="text-h1 text-center mb-5" v-if="resultData">
+    <div class="text-h2 text-center mb-5" v-if="resultData">
       ${{resultData.data.final_result.toFixed(2)}}
     </div>
     <v-card v-if="resultData">
