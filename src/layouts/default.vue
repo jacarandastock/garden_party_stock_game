@@ -23,7 +23,7 @@ defineProps({
     <VSonner position="top-right"/>
     <v-app-bar flat class="text-h6 font-weight-bold">
       <v-spacer></v-spacer>
-      {{dataStore.year}} 年
+      {{dataStore.year}}
       <v-spacer></v-spacer>
       <!--      <total-rank></total-rank>-->
       <theme-toggler></theme-toggler>
