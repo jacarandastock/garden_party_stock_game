@@ -145,7 +145,7 @@ const option = ref({
   xAxis: {
     type: 'category',
     boundaryGap: false,
-    data: ['2018', '2019', '2020', '2021', '2022'],
+    data: ['2020', '2021', '2022', '2023', '2024'],
   },
   yAxis: {
     type: 'value',
