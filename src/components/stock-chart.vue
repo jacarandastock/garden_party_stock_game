@@ -19,7 +19,8 @@ const chartOptions = {
   },
   xaxis: {
     type: "category",
-    categories: dataStore.graph_data.x,  // 使用x值作为x轴的类别
+    //categories: dataStore.graph_data.x,  // 使用x值作为x轴的类别
+    categories: dataStore.graph_data.x.map(x => String(x)),
   },
   dataLabels: {
     enabled: false,
@@ -44,7 +45,8 @@ function updateChart() {
   console.log("graph_data.x =", dataStore.graph_data.x);
   updateOptions({
     xaxis: {
-      categories: dataStore.graph_data.x,
+      //categories: dataStore.graph_data.x,
+      categories: dataStore.graph_data.x.map(x => String(x)),
     }
   });
   // chartOptions.xaxis.categories = dataStore.graph_data.x;
