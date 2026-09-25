@@ -20,7 +20,7 @@ const chartOptions = {
   xaxis: {
     type: "category",
     //categories: dataStore.graph_data.x,  // 使用x值作为x轴的类别
-    categories: dataStore.graph_data.x.map(x => String(x)),
+    categories: ["2021", "2022", "2023", "2024", "2025"],
   },
   dataLabels: {
     enabled: false,
@@ -46,7 +46,8 @@ function updateChart() {
   updateOptions({
     xaxis: {
       //categories: dataStore.graph_data.x,
-      categories: dataStore.graph_data.x.map(x => String(x)),
+      type: "category",
+      categories: ["2021", "2022", "2023", "2024", "2025"],
     }
   });
   // chartOptions.xaxis.categories = dataStore.graph_data.x;
