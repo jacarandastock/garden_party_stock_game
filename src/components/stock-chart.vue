@@ -42,7 +42,7 @@ const updateOptions = (options) => {
   chart.value?.updateOptions(options)
 }
 function updateChart() {
-  console.log("graph_data.x =", dataStore.graph_data.x);
+  //console.log("graph_data.x =", dataStore.graph_data.x);
   updateOptions({
     xaxis: {
       //categories: dataStore.graph_data.x,
